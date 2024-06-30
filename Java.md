@@ -45,6 +45,50 @@ for (int i = 0; i < players.length; i++)
 
 _Note: If you don’t have the array length handy, you can get it from the array’s_ `.length` _**property**. Recall using the_ `.length()` _**method** call for a String._
 
+### Two-Dimensional Arrays
+
+```java
+double[][] sales = new double[5][4];
+```
+
+### Varargs
+
+_Note: An important caveat about using_ `varargs` _is that the variable argument must always be the last argument in the argument list. This makes sense when you consider that, otherwise, the compiler wouldn’t be able to keep track of the arguments if any other than the last argument had a variable number._
+
+**Example:**
+
+```java
+public static void PrintSomeWords(String… words)
+{
+    for (String word : words)
+        System.out.println(word);
+}
+```
+
+### Jagged Arrays
+
+_Note: Java lets you create two-dimensional arrays in which the length of each element of the main array is different. This is sometimes called a **jagged array** because the array doesn’t form a nice rectangle. Instead, its edges are jagged._
+
+**Example:**
+
+```java
+
+String[][] teams =
+{
+    {"Henry Blake", "Johnny Mulcahy"},
+    {"Benjamin Pierce", "John McIntyre", "Jonathan Tuttle"},
+    {"Margaret Houlihan", "Frank Burns"},
+    {"Max Klinger", "Radar O'Reilly", "Igor Straminsky"}
+};
+
+for (String[] team : teams)
+{
+    for (String player : team)
+        System.out.println(player);
+    System.out.println();
+}
+```
+
 ## Loops
 
 ### `while` Loop
