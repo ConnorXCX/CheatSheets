@@ -93,7 +93,7 @@ for (int count = 10; count >= 0; count--)
 }
 ```
 
-### Enhanced `for` Loop
+### `for-each` Loop
 
 ```java
 String[] days = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
