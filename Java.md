@@ -104,6 +104,8 @@ for (String day : days)
 }
 ```
 
+_Note: It’s important to note that the_ `for-each` _loop gives you a copy of each item in the array, not the item itself. So, you can’t alter the contents of an array by using a_ `for-each` _loop._
+
 ## `switch` Statement
 
 ```java
