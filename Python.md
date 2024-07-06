@@ -462,3 +462,31 @@ for value in raw_data:
 filtered_data
 >>> [56.2, 51.7, 55.3, 52.5, 47.8]
 ```
+
+### Lambda Expressions
+
+_Note: Example sourced from the [official Python docs](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions)._
+
+Semantically, Lambda expressions are just syntactic sugar for a normal function definition. Like nested function definitions, lambda functions can reference variables from the containing scope:
+
+```python
+def make_incrementor(n):
+    return lambda x: x + n
+
+f = make_incrementor(42)
+
+f(0)
+>>> 42
+
+f(1)
+>>> 43
+```
+
+The above example uses a lambda expression to return a function. Another use is to pass a small function as an argument:
+
+```python
+pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+pairs.sort(key=lambda pair: pair[1])
+pairs
+>>> [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
+```
