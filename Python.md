@@ -187,6 +187,7 @@ or, equivalently:
 
 ```python
 transposed = []
+
 for i in range(4):
     transposed.append([row[i] for row in matrix])
 
@@ -199,6 +200,7 @@ or, equivalently:
 
 ```python
 transposed = []
+
 for i in range(4):
     # the following 3 lines implement the nested list comprehension
     transposed_row = []
@@ -242,6 +244,7 @@ _Note: A tuple consists of a number of values separated by commas._
 ```python
 t = 12345, 54321, 'hello!'
 t[0]
+
 >>> 12345
 t
 >>> (12345, 54321, 'hello!')
