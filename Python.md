@@ -153,7 +153,7 @@ freshfruit = ['  banana', '  loganberry ', 'passion fruit  ']
 vec = [[1,2,3], [4,5,6], [7,8,9]]
 
 [num for elem in vec for num in elem]
-[>>> 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # create a list with complex expressions and nested functions
 from math import pi
