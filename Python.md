@@ -2,6 +2,18 @@
 
 _Note: Most examples are sourced from the [official Python docs](https://docs.python.org/3/tutorial/datastructures.html)._
 
+## Quick Reference
+
+**List** = `[]`
+
+**Dictionary** = `{key: value}`
+
+**Set** = `set()` if initialized to empty _or_ `{}` with values.
+
+**LIFO** = `.append()`, `.pop()`
+
+**FIFO** = `.append()`, `.popleft()`
+
 ## Data Structures
 
 ### Lists
