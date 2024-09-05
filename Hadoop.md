@@ -52,7 +52,11 @@
 
 ## Query Engines
 
-TBD
+1. **Drill**: write SQL queries that can work across a wide-range of NoSQL databases and compile data across disparate data stores
+1. **Hue**
+1. **Phoenix**: similar to Drill, but gives ACID guarantees and OLTP
+1. **Presto**
+1. **Zeppelin**: notebook approach to interacting with cluster
 
 ## References
 
