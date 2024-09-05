@@ -29,7 +29,7 @@
 1. **Oozie**: job scheduling
 1. **Zookeeper**: managing and coordinating cluster; track up / down nodes; track shared states across cluster
 1. **Mahout** & **Spark MLLib**: machine learning algorithm libraries
-1. **Solar** & **Lucene**: searching and indexing
+1. **Solr** & **Lucene**: searching and indexing
 1. **Mesos**
 1. **Ambari**
 
