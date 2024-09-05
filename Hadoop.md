@@ -15,7 +15,7 @@
    1. **Resource Manager**: privilege of allocating resource for the applications.
    1. **Nodes Manager**: allocates resources such as CPU, memory, and bandwidth per machine.
    1. **Application Manager**: interface between the Resource Manager and Node Manager.
-1. **MapReduce** (Programming based Data Processing)
+1. **MapReduce** (programming based data processing)
    - **Mappers**: transform data in parallel across cluster
    - **Reducers**: aggregate data
 
