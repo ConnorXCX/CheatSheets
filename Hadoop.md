@@ -1,6 +1,6 @@
 # Hadoop Cheat Sheet
 
-## High Level Hadoop Ecosystem
+## High-Level Hadoop Ecosystem
 
 1. [Core Hadoop Ecosystem](#core-hadoop-ecosystem)
 1. [Query Engines](#query-engines)
