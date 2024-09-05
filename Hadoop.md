@@ -21,13 +21,21 @@
 
 ### Hadoop Common Utilities
 
-1. **Spark**: In-Memory data processing
-1. **PIG** & **HIVE**: Query based processing of data services
-1. **HBase**: NoSQL Database
-1. **Mahout** & **Spark MLLib**: Machine Learning algorithm libraries
-1. **Solar** & **Lucene**: Searching and Indexing
-1. **Zookeeper**: Managing cluster
-1. **Oozie**: Job Scheduling
+1. **Spark**: in-memory data processing with scripts written in Python, Java, or Scala programming languages
+1. **PIG** & **HIVE**: SQL-like query based processing of data services
+1. **TEZ**: allows for a complex directed-acyclic-graph of tasks for processing data
+1. **HBase**: NoSQL database; columnar datastore; fast database for very large transaction rates (OLTP type transactions)
+1. **Storm**: processing steaming data in real-time
+1. **Oozie**: job scheduling
+1. **Zookeeper**: managing and coordinating cluster; track up / down nodes; track shared states across cluster
+1. **Mahout** & **Spark MLLib**: machine learning algorithm libraries
+1. **Solar** & **Lucene**: searching and indexing
+
+### Hadoop Data Ingestion Common Utilities:
+
+1. **Kafka**
+1. **Sqoop**
+1. **Flume**
 
 ## Query Engines
 
