@@ -12,6 +12,7 @@
 
 1. [Overview](#overview)
 1. [Architecture](#architecture)
+1. [Using HDFS](#using-hdfs)
 
 #### References
 
@@ -98,6 +99,14 @@
 - entry point; client application
 - usually exists as a client library or client API
 - queries Name Node, then Data Nodes
+
+### Using HDFS
+
+1. UI (Ambari)
+1. CLI
+1. HTTP / HDFS Proxies
+1. Java interface
+1. NFS Gateway
 
 ## References
 
