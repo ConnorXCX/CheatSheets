@@ -1,5 +1,11 @@
 # Hadoop Cheat Sheet
 
+## High Level Hadoop Ecosystem
+
+1. [Core Hadoop Ecosystem](#core-hadoop-ecosystem)
+1. [Query Engines](#query-engines)
+1. [External Data Storage](#external-data-storage)
+
 ## Core Hadoop Ecosystem
 
 ### Native to Hadoop
@@ -22,6 +28,14 @@
 1. **Solar** & **Lucene**: Searching and Indexing
 1. **Zookeeper**: Managing cluster
 1. **Oozie**: Job Scheduling
+
+## Query Engines
+
+TBD
+
+## External Data Storage
+
+TBD
 
 ## References
 
