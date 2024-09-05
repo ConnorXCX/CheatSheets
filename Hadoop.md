@@ -30,6 +30,8 @@
 1. **Zookeeper**: managing and coordinating cluster; track up / down nodes; track shared states across cluster
 1. **Mahout** & **Spark MLLib**: machine learning algorithm libraries
 1. **Solar** & **Lucene**: searching and indexing
+1. **Mesos**
+1. **Ambari**
 
 ### Hadoop Data Ingestion Utilities
 
@@ -39,14 +41,14 @@
 
 ## External Data Storage
 
-Relational Data Stores:
+### Relational Data Stores
 
 1. **MySQL**
 
-Non-Relational Data Stores:
+### Non-Relational Data Stores
 
-1. **Cassandra**: columnar data store like HBase; good for real-time applications
-1. **MongoDB**: columnar data store like HBase; good for real-time applications
+1. **Cassandra**: columnar data store like HBase; good for real-time applications; key-value data pairs
+1. **MongoDB**: columnar data store like HBase; good for real-time applications; key-value data pairs
 
 ## Query Engines
 
