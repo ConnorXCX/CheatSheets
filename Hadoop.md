@@ -39,11 +39,14 @@
 
 ## External Data Storage
 
-- Relational Data Stores:
-  1. **MySQL**
-- Non-Relational Data Stores:
-  1. **Cassandra**: a columnar data store like HBase; good for real-time applications
-  1. **MongoDB**: a columnar data store like HBase; good for real-time applications
+Relational Data Stores:
+
+1. **MySQL**
+
+Non-Relational Data Stores:
+
+1. **Cassandra**: columnar data store like HBase; good for real-time applications
+1. **MongoDB**: columnar data store like HBase; good for real-time applications
 
 ## Query Engines
 
