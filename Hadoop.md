@@ -1,10 +1,19 @@
 # Hadoop Cheat Sheet
 
-## High-Level Hadoop Ecosystem
+## Contents
+
+#### High-Level Hadoop Ecosystem
 
 1. [Core Hadoop Ecosystem](#core-hadoop-ecosystem)
 1. [External Data Storage](#external-data-storage)
 1. [Query Engines](#query-engines)
+
+#### HDFS
+
+1. [Overview](#overview)
+1. [Architecture](#architecture)
+
+## High-Level Hadoop Ecosystem
 
 ### Core Hadoop Ecosystem
 
@@ -59,9 +68,6 @@
 1. **Zeppelin**: notebook approach to interacting with cluster
 
 ## HDFS
-
-1. [Overview](#overview)
-1. [Architecture](#architecture)
 
 ### Overview
 
