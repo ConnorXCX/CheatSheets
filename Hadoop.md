@@ -31,7 +31,7 @@
 1. **Mahout** & **Spark MLLib**: machine learning algorithm libraries
 1. **Solar** & **Lucene**: searching and indexing
 
-### Hadoop Data Ingestion Utilities:
+### Hadoop Data Ingestion Utilities
 
 1. **Kafka**: general purpose pipelines to publish data from various sources into Hadoop cluster
 1. **Sqoop**: connector between Hadoop and legacy databases
