@@ -16,7 +16,9 @@
 
 #### [MapReduce](#mapreduce-1)
 
-1. []()
+1. [Overview](#overview-1)
+1. [Mapping](#mapping)
+1. [Reducer](#reducer)
 
 #### [References](#references-1)
 
@@ -111,6 +113,23 @@
 1. NFS Gateway
 
 ## MapReduce
+
+### Overview
+
+- distributes the processing of data on your cluster
+- divides data into partitions that are mapped (transformed) and reduced (aggregated) by the mapper and reducer functions you design
+- resilient to failure; an application master monitors your mappers and reducers on each partition
+
+### Mapping
+
+- converts raw source data into key / value pairs
+- objective is to extract and organize what we care about as soon as possible
+- 'shuffle and sort': MapReduce can automatically aggregate the keys and their associated values (can have multiple values for the same key), and sort the keys
+
+### Reducer
+
+- processes each key's values
+- for each key, a reducer is called once
 
 ## References
 
