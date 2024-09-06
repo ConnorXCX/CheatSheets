@@ -130,7 +130,9 @@
 
 ### Shuffle & Sort
 
-- MapReduce can automatically aggregate the keys and their associated values (can have multiple values for the same key), and sort the keys
+- MapReduce automatically aggregates the keys and their associated values (can have multiple values for the same key), and sorts the keys
+- by default, streaming treats all inputs and outputs as strings; therefore, they get sorted as strings, not numerically
+- sometimes need to format in reducer so data is sorted properly (i.e. zero-pad numbers)
 
 ### Reducer
 
