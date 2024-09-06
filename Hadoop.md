@@ -21,6 +21,13 @@
 1. [Shuffle & Sort](#shuffle--sort)
 1. [Reducer](#reducer)
 
+#### [Spark](#spark-1)
+
+1. [Overview](#overview-2)
+1. [Scalability](#scalability)
+1. [Component Library](#component-library)
+1. [Resilient Distributed Dataset (RDD)](#resilient-distributed-dataset-rdd)
+
 #### [References](#references-1)
 
 ## High-Level Hadoop Ecosystem
@@ -138,6 +145,40 @@
 
 - processes each key's values
 - for each key, a reducer is called once
+
+## Spark
+
+### Overview
+
+- fast and general engine for large-scale data processing
+- rich ecosystem and framework to enable machine learning, data mining, graph analysis, and streaming data
+- write scripts in programming languages like Java, Python, and Scala
+- Spark is a memory-based solution which is why the Executor Cache is very integral
+- doesn't have to run on Hadoop; can run on its own Cluster Manager
+- built around one main concept: the Resilient Distributed Dataset (RDD)
+
+### Scalability
+
+1. Driver Program
+   1. Spark Context
+1. Cluster Manager (Spark, YARN)
+1. Series of Executor Processors
+   1. Cache
+   1. Tasks
+
+### Component Library
+
+1. Spark Streaming
+1. Spark SQL
+1. MLLib
+1. GraphX
+1. Spark Core
+
+### Resilient Distributed Dataset (RDD)
+
+- an RDD object essentially represents a dataset
+- you can call various functions on the RDD object to transform it or reduce it or analyze it to produce new RDDs
+- since Spark 2.0, SQL focused version of RDDs were introduced called datasets
 
 ## References
 
