@@ -153,6 +153,9 @@
 - fast and general engine for large-scale data processing
 - rich ecosystem and framework to enable machine learning, data mining, graph analysis, and streaming data
 - write scripts in programming languages like Java, Python, and Scala
+- Spark itself is written in Scala
+  - Scala's functional programming lends itself well for distributed processing
+  - fast performance (Scala compiles to Java bytecode)
 - Spark is a memory-based solution which is why the Executor Cache is very integral
 - doesn't have to run on Hadoop; can run on its own Cluster Manager
 - built around one main concept: the Resilient Distributed Dataset (RDD)
