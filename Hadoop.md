@@ -27,6 +27,19 @@
 1. [Scalability](#scalability)
 1. [Component Library](#component-library)
 1. [Resilient Distributed Dataset (RDD)](#resilient-distributed-dataset-rdd)
+1. [Streaming](#streaming)
+
+#### [YARN](#yarn-1)
+
+1. [Overview](#overview-3)
+
+#### [Kafka](#kafka-1)
+
+1. [Overview](#overview-4)
+
+#### [Flink](#flink-1)
+
+1. [Overview](#overview-5)
 
 #### [References](#references-1)
 
@@ -186,7 +199,7 @@
 - RDDs are created by the Driver Program
 - Transforming RDDs:
   - map
-  - flatmap
+  - flatMap
   - filter
   - distinct
   - sample
@@ -210,6 +223,53 @@
 - DataSets:
   - in Spark 2.0, a DataFrame is really a DataSet of Row objects
   - DataSets can wrap known, typed data too
+
+### Streaming
+
+- processing continuous streams of data in near-real-time
+- Use Cases:
+  - analyze data streams in real time, instead of in huge batch jobs daily
+  - analyze streams of web log data to react to user behavior
+  - analyze streams of real-time sensor data for 'Internet of Things' stuff
+- High-Level:
+  - splits data into micro batches or little RDDs that can get managed together for transformation and output to other systems
+  - usually split by one second chunks (i.e. near-real-time)
+  - processing of RDDs can happen in parallel on different worker nodes
+- DStreams (Discretized Streams):
+  - generates the RDDs for each time step, and can produce output at each time step
+  - can be transformed and acted on in much the same way as RDDs
+  - or can access their underlying RDDs
+  - perform operations on DStreams applied continuously over time as new batches of information gets received
+  - Stateless Transformations on DStreams:
+    - Map
+    - FlatMap
+    - Filter
+    - reduceByKey
+  - Stateful Data:
+    - can also maintain long-lived stated on DStreams
+    - windowed transformations
+- Structured Streaming:
+  - new, higher-level API for streaming structured data
+  - uses DataSets
+  - new data continuously appended, like a DataFrame that never ends
+
+## YARN
+
+### Overview
+
+- TBD
+
+## Kafka
+
+### Overview
+
+- TBD
+
+## Flink
+
+### Overview
+
+- TBD
 
 ## References
 
