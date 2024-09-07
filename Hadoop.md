@@ -37,6 +37,8 @@
 #### [Kafka](#kafka-1)
 
 1. [Overview](#overview-4)
+1. [Architecture](#architecture-1)
+1. [Scalability](#scalability-1)
 
 #### [Flink](#flink-1)
 
@@ -286,7 +288,27 @@
 
 ### Overview
 
-- TBD
+- general purpose publish / subscribe messaging system
+- Kafka servers store all incoming messages from _publishers_ for some period of time, and _publishes_ them to a stream of data call a _topic_
+- Kafka _consumers_ subscribe to one or more topics, and receive data as it's published
+- a stream / topic can have many different consumers, all with their own position in the stream maintained
+- NOT just for Hadoop
+
+### Architecture
+
+1. **Producers**: generate data
+1. **Consumers**: receive data
+1. **Connectors**: plug-in modules for various databases
+   - can publish new rows in a database as messages on a topic to Kafka
+   - or can receive new messages on a topic from Kafka
+1. **Stream Processors**: transform data as it comes in
+
+### Scalability
+
+- Kafka itself may be distributed among many processes on many servers
+- consumers may also be distributed
+  - consumers of the same group will have messages distributed amongst them
+  - consumers of different groups will get their own copy of each message
 
 ## Flink
 
