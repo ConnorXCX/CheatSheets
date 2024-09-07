@@ -43,11 +43,14 @@
 
 #### [Relational Data Stores with Hadoop](#relational-data-stores-with-hadoop-1)
 
-1. [Overview](#overview-6)
+1. [Hive](#hive)
+1. [MySQL](#mysql)
 
 #### [Non-Relational Data Stores with Hadoop](#non-relational-data-stores-with-hadoop-1)
 
-1. [Overview](#overview-7)
+1. [HBase](#hbase)
+1. [Cassandra](#cassandra)
+1. [MongoDB](#mongodb)
 
 #### [References](#references-1)
 
@@ -287,13 +290,25 @@
 
 ## Relational Data Stores with Hadoop
 
-### Overview
+### Hive
+
+- TBD
+
+### MySQL
 
 - TBD
 
 ## Non-Relational Data Stores with Hadoop
 
-### Overview
+### HBase
+
+- TBD
+
+### Cassandra
+
+- TBD
+
+### MongoDB
 
 - TBD
 
