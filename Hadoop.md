@@ -32,6 +32,7 @@
 #### [YARN](#yarn-1)
 
 1. [Overview](#overview-3)
+1. [How YARN Works](#how-yarn-works)
 
 #### [Kafka](#kafka-1)
 
@@ -268,7 +269,18 @@
 
 ### Overview
 
-- TBD
+- Yet Another Resource Negotiator
+- separates the problem of managing resources and resource negotiation on your cluster from MapReduce
+- enables development of MapReduce alternatives (Spark, Tez) built on top of YARN
+- YARN sits on the Cluster Compute Layer of Hadoop cluster while HDFS sits on Cluster Storage Layer
+
+### How YARN Works
+
+- application talks to the Resource Manager to distribute work to your cluster
+- can specify locality (which HDFS block(s) do you want to process?)
+- can specify different scheduling options for applications
+  - enables running of more than one applications on cluster
+  - FIFO, Capacity, and Fair schedulers
 
 ## Kafka
 
