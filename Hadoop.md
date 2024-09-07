@@ -269,7 +269,13 @@
 
 ### Overview
 
-- TBD
+- another stream processing framework, most similar to Storm
+- can run on standalone cluster, or on top of YARN or Mesos
+- highly scalable and fault tolerant
+- performs steaming on an event-by-event basis, unlike micro batches in Spark streaming
+- can process data based on event times, not when data was received
+  - impressing windowing system
+  - this plus real-time streaming and exactly-once semantics is important for financial applications
 
 ## References
 
