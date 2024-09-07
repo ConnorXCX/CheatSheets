@@ -182,6 +182,34 @@
 - an RDD object essentially represents a dataset
 - you can call various functions on the RDD object to transform it or reduce it or analyze it to produce new RDDs
 - since Spark 2.0, SQL focused version of RDDs were introduced called datasets
+- essentially a way for Spark to store key and value information or just any information in an object that can automatically do the right thing on a cluster
+- RDDs are created by the Driver Program
+- Transforming RDDs:
+  - map
+  - flatmap
+  - filter
+  - distinct
+  - sample
+  - union, intersection, subtract, cartesian
+- many RDD methods accept a function as a parameter
+- RDD Actions:
+  - collect
+  - count
+  - countByValue
+  - take
+  - top
+  - reduce
+- nothing happens in Driver Program until an action is called (lazy evaluation)
+- can extend RDD to a DataFrame object
+- DataFrames:
+  - contain Row objects
+  - can run SQL queries
+  - has a schema (lends itself to more efficient storage)
+  - read and write to JSON, Hive, parquet
+  - communicate with JDBC / ODBC, Tableau
+- DataSets:
+  - in Spark 2.0, a DataFrame is really a DataSet of Row objects
+  - DataSets can wrap known, typed data too
 
 ## References
 
