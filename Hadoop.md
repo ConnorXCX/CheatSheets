@@ -41,6 +41,14 @@
 
 1. [Overview](#overview-5)
 
+#### [Relational Data Stores with Hadoop](#relational-data-stores-with-hadoop-1)
+
+1. [Overview](#overview-6)
+
+#### [Non-Relational Data Stores with Hadoop](#non-relational-data-stores-with-hadoop-1)
+
+1. [Overview](#overview-7)
+
 #### [References](#references-1)
 
 ## High-Level Hadoop Ecosystem
@@ -276,6 +284,18 @@
 - can process data based on event times, not when data was received
   - impressing windowing system
   - this plus real-time streaming and exactly-once semantics is important for financial applications
+
+## Relational Data Stores with Hadoop
+
+### Overview
+
+- TBD
+
+## Non-Relational Data Stores with Hadoop
+
+### Overview
+
+- TBD
 
 ## References
 
