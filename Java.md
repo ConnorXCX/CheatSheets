@@ -206,6 +206,29 @@ TBD
 
 TBD
 
+## Abstract Class versus Interface
+
+In Object-Oriented Programming (OOP), both abstract classes and interfaces serve as fundamental constructs for defining contracts. They establish a blueprint for other classes, ensuring consistent implementation of methods and behaviors.
+
+### Abstract Class
+
+- `abstract` keyword is used to create an abstract class and it can be used with methods.
+- Subclasses use `extends` keyword to extend an abstract class and they need to provide implementation of all the declared methods in the abstract class unless the subclass is also an abstract class.
+- Abstract classes can have methods with implementation whereas interface provides absolute abstraction and can’t have any method implementations.
+- Abstract classes can have constructors.
+- A subclass can extend only one abstract class.
+  Abstract classes can extend other class and implement interfaces.
+- Abstract classes can define contract and provide other method implementations for subclasses to use.
+
+### Interface
+
+- `interface` keyword is used to create interface and it can’t be used with methods.
+- Subclasses use `implements` keyword to implement interfaces and should provide implementation for all the methods declared in the interface.
+- Interfaces can not have constructors.
+- Can implement multiple interfaces.
+- Interface can only extend other interfaces.
+- Interfaces are used to define contract for the subclasses.
+
 ## Exceptions
 
 ![Java Exception Hierarchy](images/Exception-in-java1.png "Java Exception Hierarchy")
