@@ -205,3 +205,22 @@ TBD
 ## Variables and Data Types
 
 TBD
+
+## Exceptions
+
+![Java Exception Hierarchy](images/Exception-in-java1.png "Java Exception Hierarchy")
+
+### Checked Exceptions
+
+- These are the exceptions that are checked at **compile time**.
+- Any checked exception is a subclass of `Exception`.
+- Checked exceptions in Java must be either caught or declared in the method signature, representing conditions outside the program’s control.
+- If some code within a method throws a checked exception, then the method must either handle the exception or it must specify the exception using the `throws` keyword.
+- **Fully Checked Exception** is where all its child classes are also checked (e.g., `IOException`, `InterruptedException`).
+
+- **Partially Checked Exception** is where some of its child classes are unchecked (e.g., `Exception`).
+
+### Unchecked Exceptions
+
+- Unchecked exceptions are **runtime exceptions** that are not required to be caught or declared in a throws clause.
+- Unchecked exceptions include all subclasses of the `RuntimeException` class, as well as the `Error` class and its subclasses.
