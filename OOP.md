@@ -11,6 +11,7 @@ Object-oriented programming aims to implement real-world entities like inheritan
 _Hides an object's internal state and functionality, only allowing access through a public set of functions._
 
 - Encapsulation can be achieved by declaring all the variables in a class as private and writing public methods in the class to set and get the values of the variables.
+  - Usually with public `getter` and `setter` methods within the class.
 - The variables or the data in a class is hidden from any other class and can be accessed only through any member function of the class in which they are declared.
 - Data in a class is hidden from other classes, which is similar to what data-hiding does; therefore, the terms “_encapsulation_” and “_data-hiding_” are used interchangeably.
 
