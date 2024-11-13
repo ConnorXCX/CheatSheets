@@ -16,6 +16,8 @@ _Hides an object's internal state and functionality, only allowing access throug
   - To make attributes "_read only_", simply supply the class with only pubic `getter` methods for those attributes.
 - The variables or the data in a class is hidden from any other class and can be accessed only through any member function of the class in which they are declared.
 - Data in a class is hidden from other classes, which is similar to what data-hiding does; therefore, the terms “_encapsulation_” and “_data-hiding_” are used interchangeably.
+- Keeps the programmer in control of access to data.
+- Prevents the program from ending up in any strange or unwanted states.
 
 ### II. Abstraction
 
