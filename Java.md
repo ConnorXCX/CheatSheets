@@ -238,6 +238,7 @@ In Object-Oriented Programming (OOP), both abstract classes and interfaces serve
 ### Interface
 
 - `interface` keyword is used to create interface and it can’t be used with methods.
+- An interface is similar to an abstract class, but there’s a crucial difference: A class can inherit only one other class, but a class can implement as many interfaces as it needs.
 - Subclasses use `implements` keyword to implement interfaces and should provide implementation for all the methods declared in the interface.
 - Interfaces can not have constructors.
 - Can implement multiple interfaces.
