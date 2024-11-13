@@ -25,6 +25,13 @@ _Hides unnecessary implementation code, only revealing internal mechanisms that 
 
 - In Java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
 - The abstract method contains only method declaration, but not implementation.
+- Users of your classes should not worry about the inner details of those classes.
+- Classes should not directly interact with other classes's data.
+- Enables the program to be worked on incrementally and prevents it from becoming entangled and complex.
+- Interfacing & Implementation
+  - The **interface** of a class refers to the way sections of code can communicate with one another.
+  - The **implementation** of these methods, or how these methods are coded, should be hidden (or abstracted away).
+  - Determine specific points of contact that can act as an interface between classes, and only worry about the implementation when coding it.
 
 ### III. Inheritance
 
