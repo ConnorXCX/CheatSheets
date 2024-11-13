@@ -4,6 +4,17 @@ As the name suggests, Object-Oriented Programming or Java OOPs concept refers to
 
 Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc. in programming. The main aim of OOPs is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
 
+## Contents
+
+#### [Pillars](#pillars-1)
+
+1. [Encapsulation](#i-encapsulation)
+1. [Abstraction](#ii-abstraction)
+1. [Inheritance](#iii-inheritance)
+1. [Polymorphism](#iv-polymorphism)
+
+#### [Object-Oriented Programming (OOP) versus Procedure-Oriented Programming](#object-oriented-programming-oop-versus-procedure-oriented-programming-1)
+
 ## Pillars
 
 ### I. Encapsulation
@@ -64,21 +75,25 @@ _Allows classes to reuse code and properties from other classes._
 
 ### IV. Polymorphism
 
-_Allows objects to take on more than one form and share behaviors._
+_Allows objects and methods to take on more than one form and share behaviors._
 
 **Overloading (Compile-Time Polymorphism, Static Polymorphism, or Early Binding)**
 
 - In Java, a method signature is composed of a name and the number, type, and order of its parameters.
-- Changing the Number of Parameters.
-- Changing Data Types of the Arguments.
-- Changing the Order of the Parameters of Methods
+- Overload a method by:
+  - Changing the Number of Parameters.
+  - Changing Data Types of the Arguments.
+  - Changing the Order of the Parameters of Methods
 - Return types and thrown exceptions are **not** considered to be a part of the method signature, nor are the names of parameters; they are ignored by the compiler for checking method uniqueness.
 
 **Overriding (Run-Time Polymorphism, Dynamic Polymorphism)**
 
 - In Java, Overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes.
 - When a method in a subclass has the same name, the same parameters or signature, and the same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
-- The version of a method that is executed will be determined by the object that is used to invoke it. If an object of a parent class is used to invoke the method, then the version in the parent class will be executed, but if an object of the subclass is used to invoke the method, then the version in the child class will be executed. In other words, it is the type of the object being referred to (not the type of the reference variable) that determines which version of an overridden method will be executed.
+- The version of a method that is executed will be determined by the object that is used to invoke it. If an object of a parent class is used to invoke the method, then the version in the parent class will be executed, but if an object of the subclass is used to invoke the method, then the version in the child class will be executed.
+  - In other words, it is the type of the object being referred to (not the type of the reference variable) that determines which version of an overridden method will be executed.
+- Form of the method is decided based on where in the class hierarchy it is called.
+- The implementation of a method signature that will used is determined as the program is run.
 
 ## Object-Oriented Programming (OOP) versus Procedure-Oriented Programming
 
