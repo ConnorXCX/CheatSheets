@@ -246,7 +246,9 @@ In Object-Oriented Programming (OOP), both abstract classes and interfaces serve
 
 ## Exceptions
 
-![Java Exception Hierarchy](images/Exception-in-java1.png "Java Exception Hierarchy")
+<!-- ![Java Exception Hierarchy](images/Exception-in-java1.png "Java Exception Hierarchy") -->
+
+![Java Exception Hierarchy](images/java_exception_hierarchy.webp "Java Exception Hierarchy")
 
 ### Checked Exceptions
 
