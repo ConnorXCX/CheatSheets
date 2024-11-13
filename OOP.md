@@ -40,6 +40,15 @@ _Allows classes to reuse code and properties from other classes._
 - It is the mechanism in Java by which one class is allowed to inherit the features (fields and methods) of another class.
 - We are achieving inheritance by using `extends` keyword.
 - Inheritance is also known as “_is-a_” relationship.
+- Access modifiers change which classes have access to other classes, methods, or attributes.
+
+**Access Modifier**
+
+- Defines the access type of the method i.e. from where it can be accessed in your application. In Java, there are 4 types of access specifiers:
+  - `public`: Accessible in all classes in your application.
+  - `private`: Accessible only within the class in which it is defined.
+  - `protected`: Accessible within the package in which it is defined and in its subclass(es) (including subclasses declared outside the package).
+  - `default` (declared/defined without using any modifier): Accessible within the same class and package within which its class is defined.
 
 **Superclass**
 
@@ -70,36 +79,6 @@ _Allows objects to take on more than one form and share behaviors._
 - In Java, Overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes.
 - When a method in a subclass has the same name, the same parameters or signature, and the same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
 - The version of a method that is executed will be determined by the object that is used to invoke it. If an object of a parent class is used to invoke the method, then the version in the parent class will be executed, but if an object of the subclass is used to invoke the method, then the version in the child class will be executed. In other words, it is the type of the object being referred to (not the type of the reference variable) that determines which version of an overridden method will be executed.
-
-## Java Object-Oriented Programming (OOP) Concepts
-
-**Access Modifier**
-
-- Defines the access type of the method i.e. from where it can be accessed in your application. In Java, there are 4 types of access specifiers:
-  - `public`: Accessible in all classes in your application.
-  - `protected`: Accessible within the package in which it is defined and in its subclass(es) (including subclasses declared outside the package).
-  - `private`: Accessible only within the class in which it is defined.
-  - `default` (declared/defined without using any modifier): Accessible within the same class and package within which its class is defined.
-
-**Return Type**
-
-- The data type of the value returned by the method or void if it does not return a value.
-
-**Method Name**
-
-- The rules for field names apply to method names as well, but the convention is a little different.
-
-**Parameter list**
-
-- Comma-separated list of the input parameters that are defined, preceded by their data type, within the enclosed parentheses. If there are no parameters, you must use empty parentheses ().
-
-**Exception list**
-
-- The exceptions you expect the method to throw. You can specify these exception(s).
-
-**Method body**
-
-- It is the block of code, enclosed between braces, that you need to execute to perform your intended operations.
 
 ## Object-Oriented Programming (OOP) versus Procedure-Oriented Programming
 
