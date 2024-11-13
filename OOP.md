@@ -13,7 +13,7 @@ _Hides an object's internal state and functionality, only allowing access throug
 - Encapsulation can be achieved by declaring all the variables in a class as private and writing public methods in the class to set and get the values of the variables.
   - Usually with public `getter` and `setter` methods within the class.
   - These enable validation and checking of the data before variable states are updated within a class.
-  - To make some attributes "_read only_", simply supply the class with only pubic `getter` methods.
+  - To make attributes "_read only_", simply supply the class with only pubic `getter` methods for those attributes.
 - The variables or the data in a class is hidden from any other class and can be accessed only through any member function of the class in which they are declared.
 - Data in a class is hidden from other classes, which is similar to what data-hiding does; therefore, the terms “_encapsulation_” and “_data-hiding_” are used interchangeably.
 
