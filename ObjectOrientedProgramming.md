@@ -115,6 +115,6 @@ _Allows objects and methods to take on more than one form and share behaviors._
 
 ## References
 
-1. [Object Oriented Programming (OOPs) Concept in Java!](https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/)
-1. [Object-Oriented Programming in Java – A Beginner's Guide!](https://www.freecodecamp.org/news/object-oriented-programming-concepts-java/)
-1. [Intro to Object Oriented Programming - Crash Course!](https://youtu.be/SiBw7os-_zI?si=9zsxwrVIOMgToPb7)
+1. [Object Oriented Programming (OOPs) Concept in Java](https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/)
+1. [Object-Oriented Programming in Java – A Beginner's Guide](https://www.freecodecamp.org/news/object-oriented-programming-concepts-java/)
+1. [Intro to Object Oriented Programming - Crash Course](https://youtu.be/SiBw7os-_zI?si=9zsxwrVIOMgToPb7)

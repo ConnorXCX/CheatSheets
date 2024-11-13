@@ -15,3 +15,7 @@ TBD
 1. TBD Inversion of Control
 1. TBD Bean Scope
 1. TBD Spring Bean Life Cycle
+
+## References
+
+1. [Dependency Injection](https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-collaborators.html)
