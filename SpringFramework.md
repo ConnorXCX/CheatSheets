@@ -6,8 +6,7 @@
 
 1. [Dependency Injection](#dependency-injection)
 1. [Inversion of Control (IoC)](#inversion-of-control-ioc)
-1. [Bean Scope](#bean-scope)
-1. [Spring Bean Life Cycle](#spring-bean-life-cycle)
+1. [Spring Beans](#spring-beans)
 
 ## Concepts
 
@@ -71,14 +70,56 @@
   - Application-layer specific contexts such as the `WebApplicationContext` for use in web applications.
 - In short, the `BeanFactory` provides the configuration framework and basic functionality, and the `ApplicationContext` adds more enterprise-specific functionality. The `ApplicationContext` is a complete superset of the `BeanFactory` and is used exclusively in this chapter in descriptions of Spring’s IoC container.
 
-### Bean Scope
+### Spring Beans
 
-TBD
+### Overview
 
-### Spring Bean Life Cycle
+Within the container itself, these bean definitions are represented as `BeanDefinition` objects, which contain (among other information) the following metadata:
 
-TBD
+- A package-qualified class name: typically, the actual implementation class of the bean being defined.
+- Bean behavioral configuration elements, which state how the bean should behave in the container (scope, lifecycle callbacks, and so forth).
+- References to other beans that are needed for the bean to do its work. These references are also called collaborators or dependencies.
+- Other configuration settings to set in the newly created object — for example, the size limit of the pool or the number of connections to use in a bean that manages a connection pool.
+
+This metadata translates to a set of properties that make up each bean definition. The following table describes these properties:
+
+| Property                 |
+| ------------------------ |
+| Class                    |
+| Name                     |
+| Scope                    |
+| Constructor Arguments    |
+| Properties               |
+| Autowiring mode          |
+| Lazy initialization mode |
+| Initialization method    |
+| Destruction method       |
+
+#### Bean Scopes
+
+| Scope       | Description                                                                                                                                                                                                                                                  |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| singleton   | (Default) Scopes a single bean definition to a single object instance for each Spring IoC container.                                                                                                                                                         |
+| prototype   | Scopes a single bean definition to any number of object instances.                                                                                                                                                                                           |
+| request     | Scopes a single bean definition to the lifecycle of a single HTTP request. That is, each HTTP request has its own instance of a bean created off the back of a single bean definition. Only valid in the context of a web-aware Spring `ApplicationContext`. |
+| session     | Scopes a single bean definition to the lifecycle of an HTTP `Session`. Only valid in the context of a web-aware Spring `ApplicationContext`.                                                                                                                 |
+| application | Scopes a single bean definition to the lifecycle of a `ServletContext`. Only valid in the context of a web-aware Spring `ApplicationContext`.                                                                                                                |
+| websocket   | Scopes a single bean definition to the lifecycle of a `WebSocket`. Only valid in the context of a web-aware Spring `ApplicationContext`.                                                                                                                     |
+
+#### Life Cycle
+
+The lifecycle of a Spring bean consists of the following phases, which are listed below
+
+1. **Container Started**: The Spring IoC container is initialized.
+1. **Bean Instantiated**: The container creates an instance of the bean.
+1. **Dependencies Injected**: The container injects the dependencies into the bean.
+1. **Custom init() method**: If the bean implements InitializingBean or has a custom initialization method specified via `@PostConstruct` or init-method.
+1. **Bean is Ready**: The bean is now fully initialized and ready to be used.
+1. **Custom utility method**: This could be any custom method you have defined in your bean.
+1. **Custom destroy() method**: If the bean implements DisposableBean or has a custom destruction method specified via `@PreDestroy` or destroy-method, it is called when the container is shutting down.
 
 ## References
 
 1. [Dependency Injection](https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-collaborators.html)
+1. [Bean Scopes](https://docs.spring.io/spring-framework/reference/core/beans/factory-scopes.html)
+1. [Bean Life Cycle in Java Spring](https://www.geeksforgeeks.org/java/bean-life-cycle-in-java-spring/)
