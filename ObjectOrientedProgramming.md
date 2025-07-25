@@ -12,6 +12,7 @@ Object-oriented programming aims to implement real-world entities like inheritan
 1. [Abstraction](#ii-abstraction)
 1. [Inheritance](#iii-inheritance)
 1. [Polymorphism](#iv-polymorphism)
+1. [SOLID Principles](#solid-principles)
 
 #### [Object-Oriented Programming (OOP) versus Procedure-Oriented Programming](#object-oriented-programming-oop-versus-procedure-oriented-programming-1)
 
@@ -142,6 +143,33 @@ a.eat();  // Runtime polymorphism - calls Dog's eat if overridden
 **OOP enables faster development**
 
 - By reusing existing code and creating modular components, OOP allows for quicker and more efficient application development
+
+## SOLID Principles
+
+- **S** – Single Responsibility Principle
+- **O** – Open/Closed Principle
+- **L** – Liskov Substitution Principle
+- **I** – Interface Segregation Principle
+- **D** – Dependency Inversion Principle
+
+## Design Patterns
+
+- **Singleton** – single instance
+- **Factory** – object creation
+- **Observer** – event-driven systems
+- **Strategy** – interchangeable behavior
+- **Decorator** – add functionality dynamically
+
+```java
+// Singleton pattern
+public class Logger {
+    private static Logger instance = new Logger();
+    private Logger() {}
+    public static Logger getInstance() {
+        return instance;
+    }
+}
+```
 
 ## References
 
