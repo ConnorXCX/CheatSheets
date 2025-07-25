@@ -13,6 +13,7 @@ Object-oriented programming aims to implement real-world entities like inheritan
 1. [Inheritance](#iii-inheritance)
 1. [Polymorphism](#iv-polymorphism)
 1. [SOLID Principles](#solid-principles)
+1. [Design Patterns](#design-patterns)
 
 #### [Object-Oriented Programming (OOP) versus Procedure-Oriented Programming](#object-oriented-programming-oop-versus-procedure-oriented-programming-1)
 
