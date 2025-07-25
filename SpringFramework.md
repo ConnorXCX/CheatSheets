@@ -4,14 +4,31 @@
 
 #### [Concepts](#concepts-1)
 
-1. [Dependency Injection](#dependency-injection)
 1. [Inversion of Control (IoC)](#inversion-of-control-ioc)
+1. [Dependency Injection](#dependency-injection)
 1. [Spring Beans](#spring-beans)
 
 ## Concepts
 
+### Inversion of Control (IoC)
+
+- Inversion of Control (IoC) is a design principle in which the control of object creation and dependency management is transferred from the application code to the Spring framework. In the context of Spring, this means that the framework is responsible for instantiating, configuring, and managing the lifecycle of objects (also called beans), instead of the developer manually creating them. This is typically achieved through the Spring IoC container, which uses configuration metadata (XML, annotations, or Java-based configuration) to know how to assemble application objects.
+- Dependency injection (DI) is a specialized form of IoC, whereby objects define their dependencies (that is, the other objects they work with) only through constructor arguments, arguments to a factory method, or properties that are set on the object instance after it is constructed or returned from a factory method. The IoC container then injects those dependencies when it creates the bean. This process is fundamentally the inverse (hence the name, Inversion of Control) of the bean itself controlling the instantiation or location of its dependencies by using direct construction of classes or a mechanism such as the Service Locator pattern.
+- In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans.
+- A bean is an object that is instantiated, assembled, and managed by a Spring IoC container. Otherwise, a bean is simply one of many objects in your application.
+- Beans, and the dependencies among them, are reflected in the configuration metadata used by a container.
+- The `org.springframework.beans` and `org.springframework.context` packages are the basis for Spring Framework’s IoC container.
+- The `BeanFactory` interface provides an advanced configuration mechanism capable of managing any type of object. `ApplicationContext` is a sub-interface of `BeanFactory`. It adds:
+  - Easier integration with Spring’s AOP features
+  - Message resource handling (for use in internationalization)
+  - Event publication
+  - Application-layer specific contexts such as the `WebApplicationContext` for use in web applications.
+- In short, the `BeanFactory` provides the configuration framework and basic functionality, and the `ApplicationContext` adds more enterprise-specific functionality. The `ApplicationContext` is a complete superset of the `BeanFactory` and is used exclusively in this chapter in descriptions of Spring’s IoC container.
+
 ### Dependency Injection
 
+- Dependency Injection is a specific type of Inversion of Control where the dependencies of a class are provided externally rather than the class creating them itself. In Spring, DI allows you to inject dependencies (like service or repository classes) into your components (like controllers or other services), either through constructor injection, setter injection, or field injection. This promotes loose coupling, enhances testability, and improves code maintainability.
+- Inversion of Control (IoC) is the broader principle where the control of object creation is handed over to the Spring framework. Dependency Injection (DI) is the mechanism Spring uses to implement IoC — it injects the required dependencies into a class, rather than the class creating those dependencies itself. This allows for greater decoupling of components, easier testing, and more maintainable code. Spring supports DI via annotations (`@Autowired`, `@Inject`), XML configuration, or Java-based configuration.
 - Dependency injection, an aspect of Inversion of Control (IoC), is a general concept stating that we do not create our objects manually but instead describe how they should be created. Then an IoC container will instantiate required classes if needed.
 - Dependency injection (DI) is a process whereby objects define their dependencies (that is, the other objects with which they work) only through constructor arguments, arguments to a factory method, or properties that are set on the object instance after it is constructed or returned from a factory method. The container then injects those dependencies when it creates the bean. - This process is fundamentally the inverse (hence the name, Inversion of Control) of the bean itself controlling the instantiation or location of its dependencies on its own by using direct construction of classes or the Service Locator pattern.
 - Code is cleaner with the DI principle, and decoupling is more effective when objects are provided with their dependencies. The object does not look up its dependencies and does not know the location or class of the dependencies. As a result, your classes become easier to test, particularly when the dependencies are on interfaces or abstract base classes, which allow for stub or mock implementations to be used in unit tests.
@@ -55,20 +72,6 @@
          // business logic that actually uses the injected MovieFinder is omitted...
       }
       ```
-
-### Inversion of Control (IoC)
-
-- Dependency injection (DI) is a specialized form of IoC, whereby objects define their dependencies (that is, the other objects they work with) only through constructor arguments, arguments to a factory method, or properties that are set on the object instance after it is constructed or returned from a factory method. The IoC container then injects those dependencies when it creates the bean. This process is fundamentally the inverse (hence the name, Inversion of Control) of the bean itself controlling the instantiation or location of its dependencies by using direct construction of classes or a mechanism such as the Service Locator pattern.
-- In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans.
-- A bean is an object that is instantiated, assembled, and managed by a Spring IoC container. Otherwise, a bean is simply one of many objects in your application.
-- Beans, and the dependencies among them, are reflected in the configuration metadata used by a container.
-- The `org.springframework.beans` and `org.springframework.context` packages are the basis for Spring Framework’s IoC container.
-- The `BeanFactory` interface provides an advanced configuration mechanism capable of managing any type of object. `ApplicationContext` is a sub-interface of `BeanFactory`. It adds:
-  - Easier integration with Spring’s AOP features
-  - Message resource handling (for use in internationalization)
-  - Event publication
-  - Application-layer specific contexts such as the `WebApplicationContext` for use in web applications.
-- In short, the `BeanFactory` provides the configuration framework and basic functionality, and the `ApplicationContext` adds more enterprise-specific functionality. The `ApplicationContext` is a complete superset of the `BeanFactory` and is used exclusively in this chapter in descriptions of Spring’s IoC container.
 
 ### Spring Beans
 
