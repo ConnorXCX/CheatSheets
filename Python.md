@@ -2,6 +2,21 @@
 
 _Note: Most examples are sourced from the [official Python docs](https://docs.python.org/3/tutorial/datastructures.html)._
 
+## Contents
+
+#### [Quick Reference](#quick-reference-1)
+
+1. [Quick Reference](#quick-reference-1)
+
+#### [Data Structures](#data-structures-1)
+
+1. [Lists](#lists)
+1. [The del Statement](#the-del-statement)
+1. [Tuples and Sequences](#tuples-and-sequences)
+1. [Sets](#sets)
+1. [Dictionaries](#dictionaries)
+1. [Lambda Expressions](#lambda-expressions)
+
 ## Quick Reference
 
 **List** = `[]`
