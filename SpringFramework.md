@@ -1,13 +1,13 @@
 # Spring Framework Cheat Sheet
 
-TBD
-
 ## Contents
 
 #### [Concepts](#concepts-1)
 
 1. [Dependency Injection](#dependency-injection)
 1. [Inversion of Control (IoC)](#inversion-of-control-ioc)
+1. [Bean Scope](#bean-scope)
+1. [Spring Bean Life Cycle](#spring-bean-life-cycle)
 
 ## Concepts
 
@@ -71,11 +71,13 @@ TBD
   - Application-layer specific contexts such as the `WebApplicationContext` for use in web applications.
 - In short, the `BeanFactory` provides the configuration framework and basic functionality, and the `ApplicationContext` adds more enterprise-specific functionality. The `ApplicationContext` is a complete superset of the `BeanFactory` and is used exclusively in this chapter in descriptions of Spring’s IoC container.
 
----
+### Bean Scope
 
-1. TBD Inversion of Control
-1. TBD Bean Scope
-1. TBD Spring Bean Life Cycle
+TBD
+
+### Spring Bean Life Cycle
+
+TBD
 
 ## References
 
