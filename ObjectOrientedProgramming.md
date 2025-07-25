@@ -12,10 +12,12 @@ Object-oriented programming aims to implement real-world entities like inheritan
 1. [Abstraction](#ii-abstraction)
 1. [Inheritance](#iii-inheritance)
 1. [Polymorphism](#iv-polymorphism)
+
+#### [Concepts](#concepts-1)
+
+1. [Object-Oriented Programming (OOP) versus Procedure-Oriented Programming](#object-oriented-programming-oop-versus-procedure-oriented-programming)
 1. [SOLID Principles](#solid-principles)
 1. [Design Patterns](#design-patterns)
-
-#### [Object-Oriented Programming (OOP) versus Procedure-Oriented Programming](#object-oriented-programming-oop-versus-procedure-oriented-programming-1)
 
 ## Pillars
 
@@ -127,7 +129,9 @@ Animal a = new Dog();
 a.eat();  // Runtime polymorphism - calls Dog's eat if overridden
 ```
 
-## Object-Oriented Programming (OOP) versus Procedure-Oriented Programming
+## Concepts
+
+### Object-Oriented Programming (OOP) versus Procedure-Oriented Programming
 
 **OOP promotes code reusability**
 
@@ -145,7 +149,7 @@ a.eat();  // Runtime polymorphism - calls Dog's eat if overridden
 
 - By reusing existing code and creating modular components, OOP allows for quicker and more efficient application development
 
-## SOLID Principles
+### SOLID Principles
 
 - **S** – Single Responsibility Principle
 - **O** – Open/Closed Principle
@@ -153,7 +157,7 @@ a.eat();  // Runtime polymorphism - calls Dog's eat if overridden
 - **I** – Interface Segregation Principle
 - **D** – Dependency Inversion Principle
 
-## Design Patterns
+### Design Patterns
 
 - **Singleton** – single instance
 - **Factory** – object creation
