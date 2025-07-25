@@ -30,6 +30,15 @@ _Hides an object's internal state and functionality, only allowing access throug
 - Keeps the programmer in control of access to data.
 - Prevents the program from ending up in any strange or unwanted states.
 
+```java
+public class Person {
+    private String name;
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+}
+```
+
 ### II. Abstraction
 
 _Hides unnecessary implementation code, only revealing internal mechanisms that are relevant for other objects._
@@ -43,6 +52,12 @@ _Hides unnecessary implementation code, only revealing internal mechanisms that 
   - The **interface** of a class refers to the way sections of code can communicate with one another.
   - The **implementation** of these methods, or how these methods are coded, should be hidden (or abstracted away).
   - Determine specific points of contact that can act as an interface between classes, and only worry about the implementation when coding it.
+
+```java
+abstract class Shape {
+    abstract void draw();
+}
+```
 
 ### III. Inheritance
 
@@ -73,6 +88,16 @@ _Allows classes to reuse code and properties from other classes._
 
 - Inheritance supports the concept of “_reusability_”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class.
 
+```java
+public class Animal {
+    public void eat() { System.out.println("Eating..."); }
+}
+
+public class Dog extends Animal {
+    public void bark() { System.out.println("Barking..."); }
+}
+```
+
 ### IV. Polymorphism
 
 _Allows objects and methods to take on more than one form and share behaviors._
@@ -94,6 +119,11 @@ _Allows objects and methods to take on more than one form and share behaviors._
   - In other words, it is the type of the object being referred to (not the type of the reference variable) that determines which version of an overridden method will be executed.
 - Form of the method is decided based on where in the class hierarchy it is called.
 - The implementation of a method signature that will used is determined as the program is run.
+
+```java
+Animal a = new Dog();
+a.eat();  // Runtime polymorphism - calls Dog's eat if overridden
+```
 
 ## Object-Oriented Programming (OOP) versus Procedure-Oriented Programming
 
