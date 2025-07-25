@@ -282,7 +282,7 @@ v
 
 _Note: Curly braces or the `set()` function can be used to create sets._
 
-_Note: to create an empty set you have to use `set()`, not `{}`; the latter creates an empty dictionary, a data structure that we discuss in the next section._
+_Note: to create an **empty set** you have to use `set()`, not `{}`; the latter creates an empty dictionary, a data structure that we discuss in the next section._
 
 ```python
 basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
