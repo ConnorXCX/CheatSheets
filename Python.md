@@ -51,7 +51,7 @@ fruits.append('grape')
 fruits
 >>> ['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']
 
-fruits.sort()
+fruits.sort() # The sort() method works on the list in-place and does not return anything. Need to print out list separately after sort() operation is performed to view sorted items.
 fruits
 >>> ['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']
 
