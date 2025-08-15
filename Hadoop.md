@@ -1,4 +1,4 @@
-# Hadoop Cheat Sheet
+# Hadoop
 
 ## Contents
 

@@ -1,4 +1,4 @@
-# Data Structures Cheat Sheet
+# Data Structures
 
 ## Linked Lists
 

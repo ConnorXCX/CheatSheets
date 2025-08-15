@@ -1,4 +1,4 @@
-# Python Cheat Sheet
+# Python
 
 _Note: Most examples are sourced from the [official Python docs](https://docs.python.org/3/tutorial/datastructures.html)._
 

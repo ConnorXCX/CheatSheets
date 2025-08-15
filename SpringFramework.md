@@ -1,4 +1,4 @@
-# Spring Framework Cheat Sheet
+# Spring Framework
 
 ## Contents
 

@@ -1,4 +1,4 @@
-# Java Cheat Sheet
+# Java
 
 ## String Manipulation
 

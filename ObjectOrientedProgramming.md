@@ -1,4 +1,4 @@
-# Object-Oriented Programming (OOP) Cheat Sheet
+# Object-Oriented Programming (OOP)
 
 As the name suggests, Object-Oriented Programming or Java OOPs concept refers to languages that use objects in programming, they use objects as a primary source to implement what is to happen in the code. Objects are seen by the viewer or user, performing tasks you assign.
 

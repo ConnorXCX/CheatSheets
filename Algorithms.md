@@ -1,4 +1,4 @@
-# Algorithms Cheat Sheet
+# Algorithms
 
 ## Classifications
 

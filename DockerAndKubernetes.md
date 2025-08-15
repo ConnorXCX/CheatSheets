@@ -1,4 +1,4 @@
-# Docker and Kubernetes Cheat Sheet
+# Docker and Kubernetes
 
 ## Contents
 
